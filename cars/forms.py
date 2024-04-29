@@ -22,3 +22,23 @@ class CarForm(forms.Form):
         )
         car.save()
         return car
+    
+
+class CarModelForm(forms.ModelForm):
+    class Meta:
+        model = Car
+        fields = '__all__'
+
+    #clean_ faz o django interpretar a função de validação para o campo
+    def clean_value(self):
+        #recebe do form o campo value e verifica a condição
+        value = self.cleaned_data.get('value')
+        if value < 5000:
+            self.add_error('value', 'valor mínimo deve ser R$ 5.000')
+        return value
+    
+    def clean_factory_year(self):
+        factory_year = self.cleaned_data.get('factory_year')
+        if factory_year < 1975:
+            self.add_error('factory_year', 'O ano de fabricação não pode ser anterior a 1975')
+        return factory_year
