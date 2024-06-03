@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from cars.views import NewCarCreateView, CarListView, CarDetailView, CarUpdateView, CarDeleteView
 from accounts.views import register_view, login_view, logout_view
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', register_view, name='register'),
