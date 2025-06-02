@@ -1,75 +1,82 @@
-# Projeto Carros
+# Project Cars
 
-O projeto **Carros** é uma aplicação web construída com Django que permite aos usuários criar uma conta e, após o login, listar, criar, editar e excluir anúncios de carros.
+The **Cars** project is a web application built with Django that allows users to create an account and, after logging in, list, create, edit and delete car listings.
 
-## Funcionalidades
+## Features
 
-- **Criar um usuário**: Permite a criação de novas contas de usuário.
-- **Listar carros**: Usuários logados podem visualizar uma lista de carros disponíveis.
-- **Criar um anúncio de carro**: Usuários logados podem criar novos anúncios de carros.
-- **Editar um anúncio de carro**: Usuários logados podem editar seus anúncios existentes.
-- **Excluir um anúncio de carro**: Usuários logados podem excluir seus anúncios existentes.
+- **Create a User**: Allows the creation of new user accounts.
+- **List Cars**: Logged-in users can view a list of available cars.
+- **Create a Car Ad**: Logged-in users can create new car ads.
+- **Edit a Car Ad**: Logged-in users can edit their existing ads.
+- **Delete a Car Ad**: Logged-in users can delete their existing ads.
 
-## Requisitos
 
-Certifique-se de ter o [Python](https://www.python.org/downloads/) e o [pip](https://pip.pypa.io/en/stable/) instalados.
+## Requirements
 
-## Instalação
+Make sure you have [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed.
 
-1. Clone o repositório:
+## Installation
 
-    ```bash
-    git clone [https://github.com/seuusuario/carros.git](https://github.com/jccarlosjr/carros.git)
-    ```
-
-2. Navegue até o diretório do projeto:
+1. Clone the repository:
 
     ```bash
-    cd carros
+    git clone [https://github.com/yourusername/cars.git](https://github.com/jccarlosjr/cars.git)
     ```
 
-3. Crie e ative um ambiente virtual (opcional, mas recomendado):
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd cars
+    ```
+
+
+3. Create and activate a virtual environment (optional, but recommended):
 
     ```bash
     python -m venv venv
-    source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+    source venv/bin/activate # On Windows use `venv\Scripts\activate`
     ```
 
-4. Instale as dependências:
+4. Install the dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-5. Execute as migrações:
+5. Run the migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-6. Crie um superusuário para acessar o painel de administração (opcional):
+
+
+6. Create a superuser to access the admin panel (optional):
 
     ```bash
     python manage.py createsuperuser
     ```
 
-7. Inicie o servidor de desenvolvimento:
+
+7. Start the development server:
 
     ```bash
     python manage.py runserver
     ```
+    
+    The server will be available at `http://127.0.0.1:8000/`.
 
-    O servidor estará disponível em `http://127.0.0.1:8000/`.
+## Usage
 
-## Uso
+1. Go to the app home page and register a new account or log in with an existing account.
+2. After logging in, you can list, create, edit, and delete car ads.
 
-1. Acesse a página principal do aplicativo e registre uma nova conta ou faça login com uma conta existente.
-2. Após o login, você pode listar, criar, editar e excluir anúncios de carros.
+## Contributions
 
-## Contribuições
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
+## License
 
-## Licença
+This project is licensed under the [MIT License](LICENSE).
 
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
